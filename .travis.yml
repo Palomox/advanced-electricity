@@ -1,4 +1,4 @@
 language: java
 install: skip
-script: gradlew build
+script: gradle build
 jdk: openjdk8
