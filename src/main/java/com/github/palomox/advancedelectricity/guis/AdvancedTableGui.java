@@ -31,8 +31,6 @@ public class AdvancedTableGui extends ContainerScreen<AdvancedTableContainer>{
     protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
         GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         this.minecraft.getTextureManager().bindTexture(GUI);
-        int relX = (this.width - this.xSize) / 2;
-        int relY = (this.height - this.ySize) / 2;
-        this.blit(relX, relY, 0, 0, this.xSize, this.ySize);
+        this.blit(105, 20, 0, 0, 206, 166);
     }
 }
