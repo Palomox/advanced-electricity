@@ -3,5 +3,6 @@
 	"itemGroup.advancedelectricity": "Advanced Electricity",
 	"block.advancedelectricity.copper_ore": "Copper Ore",
 	"block.advancedelectricity.copper_block": "Copper Block",
-	"block.advancedelectricity.advanced_table": "Advanced Table"
+	"block.advancedelectricity.advanced_table": "Advanced Table",
+	"container.electriciantable": "Electrician Table"
 }

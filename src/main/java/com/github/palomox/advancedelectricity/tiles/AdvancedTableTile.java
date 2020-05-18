@@ -54,7 +54,7 @@ public class AdvancedTableTile extends TileEntity implements ITickableTileEntity
     @Nullable
     @Override
     public Container createMenu(int i, PlayerInventory playerInventory, PlayerEntity playerEntity) {
-        return new AdvancedTableContainer(i, world, pos, playerInventory, playerEntity);
+        return new AdvancedTableContainer(i, playerInventory);
     }
 
 }

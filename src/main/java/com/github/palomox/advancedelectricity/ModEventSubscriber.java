@@ -18,6 +18,7 @@ import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -55,9 +56,9 @@ public class ModEventSubscriber {
 	public static void onContainerRegistry(final RegistryEvent.Register<ContainerType<?>> event) {
 		event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
 			
-			BlockPos pos = data.readBlockPos();
+			//BlockPos pos = data.readBlockPos();
 			
-			return new AdvancedTableContainer(windowId, inv.player.world, pos, inv, inv.player);
+			return new AdvancedTableContainer(windowId, inv/*, IWorldPosCallable.of(inv.player.world, pos)*/);
 		}).setRegistryName("advanced_table"));
 	}
 }
