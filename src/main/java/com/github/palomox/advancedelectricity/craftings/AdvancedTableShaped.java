@@ -3,7 +3,7 @@ package com.github.palomox.advancedelectricity.craftings;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.github.palomox.advancedelectricity.init.ModRecipeSerializers;
+import com.github.palomox.advancedelectricity.init.IModRecipeType;
 
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.inventory.CraftingInventory;
@@ -16,9 +16,11 @@ import net.minecraft.item.crafting.RecipeItemHelper;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.common.crafting.IShapedRecipe;
 import net.minecraftforge.common.util.RecipeMatcher;
 
-public class AdvancedTableShaped implements ICraftingRecipe {
+@Deprecated
+public class AdvancedTableShaped implements ICraftingRecipe, IElectricianTableShapedRecipe<CraftingInventory>{
 	private final ResourceLocation id;
 	private final String group;
 	private final ItemStack recipeOutput;
@@ -82,7 +84,8 @@ public class AdvancedTableShaped implements ICraftingRecipe {
 
 	@Override
 	public IRecipeSerializer<?> getSerializer() {
-		return ModRecipeSerializers.advt_shaped;
+		return null;
+     	//return IModRecipeType.ELECTRICIAN_TABLE;
 	}
 	@Override
 	public NonNullList<Ingredient> getIngredients() {

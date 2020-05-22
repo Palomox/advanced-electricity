@@ -3,9 +3,8 @@ package com.github.palomox.advancedelectricity.containers;
 import java.util.Map;
 import java.util.Optional;
 
+import com.github.palomox.advancedelectricity.init.IModRecipeType;
 import com.github.palomox.advancedelectricity.init.ModBlocks;
-import com.github.palomox.advancedelectricity.init.ModRecipeSerializers;
-
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
@@ -125,7 +124,7 @@ public class AdvancedTableContainer extends Container {
 	        Optional<ICraftingRecipe> optional = world.getServer().getRecipeManager().getRecipe(IRecipeType.CRAFTING, inventory, world);
 	        if(optional.isPresent()) {
 	        	ICraftingRecipe icraftingrecipe = optional.get(); 
-	            if(resultInventory.canUseRecipe(world, serverplayerentity, icraftingrecipe) && icraftingrecipe.getSerializer() == ModRecipeSerializers.advt_shapedr) {	     
+	            if(resultInventory.canUseRecipe(world, serverplayerentity, icraftingrecipe) && icraftingrecipe.getSerializer() == IModRecipeType.ELECTRICIAN_TABLE) {	     
 	            	itemstack = icraftingrecipe.getCraftingResult(inventory);
 	            }
 	        }
