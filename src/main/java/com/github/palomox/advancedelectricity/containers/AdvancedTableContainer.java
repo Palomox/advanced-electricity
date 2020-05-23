@@ -3,7 +3,7 @@ package com.github.palomox.advancedelectricity.containers;
 import java.util.Map;
 import java.util.Optional;
 
-import com.github.palomox.advancedelectricity.init.IModRecipeType;
+import com.github.palomox.advancedelectricity.craftings.IModRecipeType;
 import com.github.palomox.advancedelectricity.init.ModBlocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;

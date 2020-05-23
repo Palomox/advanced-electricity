@@ -3,8 +3,6 @@ package com.github.palomox.advancedelectricity.craftings;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.github.palomox.advancedelectricity.init.IModRecipeType;
-
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.ItemStack;

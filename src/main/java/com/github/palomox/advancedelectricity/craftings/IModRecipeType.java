@@ -1,6 +1,4 @@
-package com.github.palomox.advancedelectricity.init;
-
-import com.github.palomox.advancedelectricity.craftings.IElectricianTableRecipe;
+package com.github.palomox.advancedelectricity.craftings;
 
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.IRecipeType;
