@@ -5,6 +5,6 @@ import net.minecraft.item.crafting.IRecipeType;
 
 public interface IModRecipeType <T extends IRecipe<?>>{
 	
-	IRecipeType<IElectricianTableRecipe> ELECTRICIAN_TABLE = IRecipeType.register("electrician_table");
+	IRecipeType<IElectricianTableRecipe> ELECTRICIAN_TABLE = IRecipeType.register("advancedelectricity:electrician_table");
 	
 }
