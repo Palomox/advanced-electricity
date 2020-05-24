@@ -89,7 +89,7 @@ public class ElectricianTableShaped implements IElectricianTableRecipe, IElectri
 	public static ItemStack deserializeItem(JsonObject json) {
 		String s = JSONUtils.getString(json, "item");
 		Item item = Registry.ITEM.getValue(new ResourceLocation(s)).orElseThrow(() -> {
-			return new JsonSyntaxException("No se que coño es " +s);
+			return new JsonSyntaxException("No se que es " +s);
 		});
 		
 		if(json.has("data")) {
