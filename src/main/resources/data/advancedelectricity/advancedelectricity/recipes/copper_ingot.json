@@ -1,0 +1,16 @@
+{
+  "type": "advancedelectricity:electrician_shaped",
+  "pattern": [
+    " ",
+    " # ",
+    " "
+  ],
+  "key": {
+    "#": {
+      "tag": "advancedelectricity:copper_block"
+    }
+  },
+  "result": {
+    "item": "advancedelectricity:copper_ingot"
+  }
+}
